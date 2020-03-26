@@ -1,5 +1,5 @@
 FROM node:10-alpine
-RUN mkdir -p /home/dan/app/node_modules && chown -R node:node /home/dan/app
+RUN mkdir -p /home/dan/app/node_modules && chown -R dan:dan /home/dan/app
 WORKDIR /home/dan/app
 COPY package*.json ./
 RUN npm config set registry http://registry.npmjs.org/
